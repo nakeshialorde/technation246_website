@@ -33,6 +33,36 @@
   ga('send', 'pageview');
 </script>
    <style>
+	 .image {position: relative; text-align: center;}
+
+.image span {position: absolute; line-height: 20px; display: block; top: 50%; 
+    margin-top: -10px; width: 100%; color: white;}
+
+img.ri
+ {
+ position: relative;
+ max-width: 100%;
+ display: inline-block;
+ vertical-align: middle;
+ }
+
+ @media screen and (orientation: portrait) {
+ img.ri { max-width: 100%; }
+ }
+ @media screen and (orientation: landscape) {
+ img.ri { max-height: 100%; }
+ }
+
+ img#hv {
+ filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+ filter: none; /* IE6-9 */
+-webkit-filter: none; /* Google Chrome & Safari 6+ */
+ }
+
+ img#hv:hover {
+filter: none;
+-webkit-filter: none;}    
+	   
       .god {
     width: 650px;
     padding: 25px;
