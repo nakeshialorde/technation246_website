@@ -23,6 +23,35 @@
   ga('send', 'pageview');
 </script>
    <style>
+		 .image {position: relative; text-align: center;}
+
+.image span {position: absolute; line-height: 20px; display: block; top: 50%; 
+    margin-top: -10px; width: 100%; color: white;}
+
+img.ri
+ {
+ position: relative;
+ max-width: 100%;
+ display: inline-block;
+ vertical-align: middle;
+ }
+
+ @media screen and (orientation: portrait) {
+ img.ri { max-width: 100%; }
+ }
+ @media screen and (orientation: landscape) {
+ img.ri { max-height: 100%; }
+ }
+
+ img#hv {
+ filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+ filter: none; /* IE6-9 */
+-webkit-filter: none; /* Google Chrome & Safari 6+ */
+ }
+
+ img#hv:hover {
+filter: none;
+-webkit-filter: none;}  
       .god {
     width: 650px;
     padding: 25px;
@@ -146,8 +175,8 @@ body {
 <br/>
 <p></p><br/><div align="center">
 <h3 class ="font_6"><div align="center">YOUR ONE STOP FOR ALL OF YOUR WEB APPLICATIONS AND DIGITAL MARKETING</h3><br/>
-<div class ="panel">
-<img src="https://raw.githubusercontent.com/nakeshialorde/newtechnation146website/master/img/picture9.JPG"/>
+<div class ="image">
+<img src="https://raw.githubusercontent.com/nakeshialorde/newtechnation146website/master/img/picture9.JPG" class="ri" id="hv"/>
 </div>
 
 <h1 class="font_6" align="center"><b>PORTFOLIO</b></h1>
@@ -160,11 +189,11 @@ At Technation we are currently working on several projects, ranging from persona
 <h1 class="font_6" align="center"><b>Our Recent Work</b></h1>
 
 <div class ="panel" align="center" width="600px" height="341px">
-<a href="https://nakeshialorde.github.io/expeditelegalservice/"><img src="https://raw.githubusercontent.com/nakeshialorde/newtechnation146website/master/img/picture10.png"/></a>
+<a href="https://nakeshialorde.github.io/expeditelegalservice/"><img src="https://raw.githubusercontent.com/nakeshialorde/newtechnation146website/master/img/picture10.png" class="ri" id="hv"/></a>
 	<p></p><br/>
-<a href="http://askanailtech.com/"><img src="https://raw.githubusercontent.com/nakeshialorde/newtechnation146website/master/img/picture11.png"/></a>
+<a href="http://askanailtech.com/"><img src="https://raw.githubusercontent.com/nakeshialorde/newtechnation146website/master/img/picture11.png" class="ri" id="hv"/></a>
 <p></p><br/>
-<a href="http://tutors246.com/"><img src="https://raw.githubusercontent.com/nakeshialorde/newtechnation146website/master/img/picture12.png"/></a>
+<a href="http://tutors246.com/"><img src="https://raw.githubusercontent.com/nakeshialorde/newtechnation146website/master/img/picture12.png" class="ri" id="hv"/></a>
 </div>
 	<p></p>
 
