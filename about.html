@@ -22,6 +22,35 @@
 </script>
    
    <style>
+	.image {position: relative; text-align: center;}
+
+.image span {position: absolute; line-height: 20px; display: block; top: 50%; 
+    margin-top: -10px; width: 100%; color: white;}
+
+img.ri
+ {
+ position: relative;
+ max-width: 75%;
+ display: inline-block;
+ vertical-align: middle;
+ }
+
+ @media screen and (orientation: portrait) {
+ img.ri { max-width: 90%; }
+ }
+ @media screen and (orientation: landscape) {
+ img.ri { max-height: 90%; }
+ }
+
+ img#hv {
+ filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+ filter: gray; /* IE6-9 */
+-webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+ }
+
+ img#hv:hover {
+filter: none;
+-webkit-filter: grayscale(0);}   
       .god {
     width: 650px;
     padding: 25px;
@@ -102,8 +131,9 @@
 <br/>
 <p></p><br/><div align="center">
 <h3 class ="font_6"><div align="center">YOUR ONE STOP FOR ALL OF YOUR WEB APPLICATIONS AND DIGITAL MARKETING</h3><br/>
-<div class ="panel">
-<img src="https://raw.githubusercontent.com/nakeshialorde/newtechnation146website/master/img/picture8.JPG"/>
+
+<div class="image">
+<img src="https://raw.githubusercontent.com/nakeshialorde/newtechnation146website/master/img/picture8.JPG" class="ri" id="hv"/>
 </div>
 
 <h1 class="font_6">
